@@ -94,7 +94,7 @@ header nav div ul li a:hover{
 .productos .productos-cont div {
     border: 3px gray solid;
     width: 300px;
-    height: 300px;
+    height: 350px;
     text-align: center;
     margin: 20px;
     font-size: 20px;
@@ -126,20 +126,22 @@ header nav div ul li a:hover{
     border-radius: 10px;
 }
 
+.productos-cont div h3{
+    font-size: 18px;
+}
+
 .productos div a {
     background-color: #070707;
     text-decoration: none;
     color: white;
     padding: 6px;
-
+    font-size: 15px;
 }
 
 .productos div img {
     width: 200px;
     height: 200px;
 }
-
-
 
 .FIXED img {
     width: 50px;
