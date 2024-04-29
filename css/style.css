@@ -14,15 +14,15 @@ body {
 }
 
 /*---------------HEADER-----------------*/
-img {
-    width: 100px;
-    height: 100px;
-}
-
 header{
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+img {
+    width: 100px;
+    height: 100px;
 }
 
 .navbar-color{
@@ -82,6 +82,12 @@ header nav div ul li a:hover{
 
 }
 
+.productos-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .productos h2 {
     background-color: #50623a;
@@ -91,7 +97,7 @@ header nav div ul li a:hover{
     color: white;
 }
 
-.productos .productos-cont div {
+.productos-cont div {
     border: 3px gray solid;
     width: 300px;
     height: 330px;
@@ -104,30 +110,16 @@ header nav div ul li a:hover{
     box-shadow: 10px 10px 38px 5px rgba(0, 0, 0, 0.498);
 }
 
-.productos-cont div a:hover{
-    background-color: #50623a;
-}
-
 .productos h3 {
     margin-bottom: 20px;
-
-}
-
-.productos .productos-cont {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
-
-.productos a {
-    border-radius: 10px;
 }
 
 .productos-cont div h3{
     font-size: 18px;
+}
+
+.productos a {
+    border-radius: 10px;
 }
 
 .productos div a {
@@ -136,6 +128,10 @@ header nav div ul li a:hover{
     color: white;
     padding: 6px;
     font-size: 15px;
+}
+
+.productos-cont div a:hover{
+    background-color: #50623a;
 }
 
 .productos div img {
@@ -227,11 +223,9 @@ header nav div ul li a:hover{
     border-radius: 50%;
     color: #ffffff;
     transition: all .5s ease;
-}
-
-.social-link a{
     margin-left: 15px;
 }
+
 
 .social-link a:hover {
     background-color: #00c3ff;
@@ -252,19 +246,11 @@ header nav div ul li a:hover{
 /*-----PAGES DE COMPRAS-----*/
 .Compras{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 30px;
     margin-bottom: 80px;
 }
 
-.carusel img{
-    background-color: #f7f7f9;
-    flex: 1;
-    width: 500px;
-    height: 500px;
-    max-width: 500px;
-    
-}
 
 .slide{
     z-index: -1;
@@ -433,7 +419,7 @@ header nav div ul li a:hover{
 .container-social{
     display: flex;
     justify-content: space-between;
-    padding: 10px o;
+    padding: 10px 0;
     align-items: center;
     border-bottom: 1px solid #e4e4e4;
 }

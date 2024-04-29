@@ -1,0 +1,45 @@
+img {
+    width: 100px;
+    height: 100px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-color{
+    background-color: $color-primario;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav div ul li a{
+    border-radius: 10px;
+    
+}
+
+header nav div ul li a:hover{
+    background-color:$color-secundario;
+}
+.nav-item{
+    color: #000000;
+}
+
+.boton{
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:5px;
+}
+.boton:hover{
+    background-color: $color-secundario;
+}
+
+.letra{
+    color: #ffffff;
+}

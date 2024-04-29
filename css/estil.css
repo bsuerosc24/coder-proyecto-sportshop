@@ -1,0 +1,700 @@
+/*---RESET---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none; }
+
+body {
+  font-family: sans-serif; }
+
+/*------VARIABLES-------*/
+/*@import "./base/operaciones.scss";
+@import "./components/main.scss";
+@import "./components/footer.scss";*/
+/*-----HEADER WITH BOOTSTRAP------*/
+img {
+  width: 100px;
+  height: 100px; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+
+.navbar-color {
+  background-color: #294b29; }
+
+.menu {
+  display: flex;
+  justify-content: space-between; }
+
+header nav div ul li a {
+  border-radius: 10px; }
+
+header nav div ul li a:hover {
+  background-color: #50623a; }
+
+.nav-item {
+  color: #000000; }
+
+.boton {
+  color: #000000;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px; }
+
+.boton:hover {
+  background-color: #50623a; }
+
+.letra {
+  color: #ffffff; }
+
+/*--------MAIN---------*/
+.sport {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  background-image: url(../img/deportivo3.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .sport marquee {
+    background-color: #50623a;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    word-spacing: 10px; }
+
+.Grids {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 150px;
+  align-items: center;
+  margin: 150px;
+  gap: 50px; }
+  .Grids div {
+    margin: 20px;
+    -webkit-box-shadow: 10px 10px 38px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 38px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 38px 5px rgba(0, 0, 0, 0.498); }
+    .Grids div img {
+      width: 150px;
+      height: 150px; }
+
+.productos h2 {
+  background-color: #50623a;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white; }
+
+.productos .productos-cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .productos .productos-cont div {
+    border: 3px gray solid;
+    width: 300px;
+    height: 330px;
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 38px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 38px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 38px 5px rgba(0, 0, 0, 0.498); }
+    .productos .productos-cont div img {
+      width: 200px;
+      height: 200px; }
+    .productos .productos-cont div h3 {
+      margin-bottom: 20px;
+      font-size: 18px; }
+    .productos .productos-cont div a {
+      border-radius: 10px;
+      background-color: #070707;
+      text-decoration: none;
+      color: white;
+      padding: 6px;
+      font-size: 15px; }
+      .productos .productos-cont div a:hover {
+        background-color: #50623a; }
+
+.FIXED a img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px; }
+
+.FIXED2 a img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 80px;
+  right: 20px; }
+
+.FIXED3 a img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 145px;
+  right: 20px; }
+
+/*----------FOOTER SCSS----------*/
+.footer {
+  background-color: #dbe7c9;
+  padding: 40px 0; }
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto; }
+    .footer .container .footer-row {
+      display: flex;
+      flex-wrap: wrap; }
+      @media (max-width: 991px) {
+        .footer .container .footer-row {
+          text-align: center; } }
+      .footer .container .footer-row .footer-links {
+        width: 25%;
+        padding: 15px; }
+        @media (max-width: 991px) {
+          .footer .container .footer-row .footer-links {
+            width: 100%;
+            margin-bottom: 30px; } }
+        .footer .container .footer-row .footer-links h4 {
+          font-size: 20px;
+          color: #080808;
+          margin-bottom: 25px;
+          margin-left: 25px;
+          font-weight: 400;
+          border-bottom: 2px solid #000000;
+          display: inline-block;
+          padding-bottom: 10px; }
+        .footer .container .footer-row .footer-links ul li a {
+          font-size: 18px;
+          text-decoration: none;
+          color: #000000;
+          display: block;
+          margin-bottom: 10px;
+          transition: all .3s ease; }
+          .footer .container .footer-row .footer-links ul li a:hover {
+            color: #00c3ff;
+            padding-left: 3px; }
+        .footer .container .footer-row .footer-links .social-link a {
+          display: inline-block;
+          min-height: 40px;
+          width: 40px;
+          background-color: rgba(61, 58, 58, 0.2);
+          margin: 0 10px 10px 0;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          color: #ffffff;
+          transition: all .5s ease;
+          margin-left: 15px; }
+        .footer .container .footer-row .footer-links .social-link :hover {
+          background-color: #00c3ff; }
+
+/*-----------PAGES DE COMPRAS-------------*/
+.Compras {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px; }
+
+.Compras .slide {
+  margin-left: 130px;
+  z-index: -1; }
+  @media screen and (max-width: 860px) {
+    .Compras .slide {
+      margin-left: 20px; } }
+
+@media screen and (max-width: 670px) {
+  .Compras .carusel {
+    margin-left: 50px; } }
+
+.Compras .carusel div img {
+  width: 500px;
+  height: 500px; }
+  @media screen and (max-width: 860px) {
+    .Compras .carusel div img {
+      width: 300px;
+      height: 300px;
+      max-width: 500px; } }
+  @media screen and (max-width: 670px) {
+    .Compras .carusel div img {
+      width: 200px;
+      height: 200px;
+      max-width: 500px; } }
+  @media screen and (max-width: 500px) {
+    .Compras .carusel div img {
+      width: 100px;
+      height: 100px;
+      margin-top: 80px;
+      max-width: 300px; } }
+  @media screen and (max-width: 450px) {
+    .Compras .carusel div img {
+      width: 80px;
+      height: 80px;
+      margin-top: 80px;
+      max-width: 300px; } }
+
+.Compras .container-info-producto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  margin-right: 50px; }
+  .Compras .container-info-producto .container-price {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .Compras .container-info-producto .container-price span {
+      font-size: 25px;
+      font-weight: 300;
+      margin-top: 15px; }
+      @media screen and (max-width: 860px) {
+        .Compras .container-info-producto .container-price span {
+          font-size: 15px;
+          font-weight: 300;
+          margin-top: 10px; } }
+      @media screen and (max-width: 670px) {
+        .Compras .container-info-producto .container-price span {
+          font-size: 13px;
+          font-weight: 200;
+          margin-top: 10px; } }
+      @media screen and (max-width: 450px) {
+        .Compras .container-info-producto .container-price span {
+          font-size: 8px;
+          font-weight: 100;
+          margin-top: 10px; } }
+    @media screen and (max-width: 500px) {
+      .Compras .container-info-producto .container-price i {
+        font-size: 10px; } }
+    @media screen and (max-width: 450px) {
+      .Compras .container-info-producto .container-price i {
+        font-size: 8px; } }
+
+.Compras .container-details-product {
+  padding: 10px 0; }
+  .Compras .container-details-product .form-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px; }
+    .Compras .container-details-product .form-group label {
+      width: 100px;
+      color: #222;
+      font-weight: 700; }
+      @media screen and (max-width: 860px) {
+        .Compras .container-details-product .form-group label {
+          width: 80px;
+          color: #222;
+          font-weight: 500; } }
+      @media screen and (max-width: 670px) {
+        .Compras .container-details-product .form-group label {
+          font-size: 13px;
+          font-weight: 200;
+          margin-top: 10px; } }
+      @media screen and (max-width: 500px) {
+        .Compras .container-details-product .form-group label {
+          font-size: 10px;
+          font-weight: 200;
+          margin-top: 10px; } }
+      @media screen and (max-width: 450px) {
+        .Compras .container-details-product .form-group label {
+          font-size: 8px;
+          font-weight: 200;
+          margin-top: 10px; } }
+    .Compras .container-details-product .form-group select {
+      width: 300px;
+      border: none;
+      padding: 12px 15px;
+      background-color: #f7f7f7;
+      outline: none;
+      color: #666; }
+      @media screen and (max-width: 860px) {
+        .Compras .container-details-product .form-group select {
+          width: 200px;
+          border: none;
+          padding: 10px;
+          background-color: #f7f7f7;
+          outline: none;
+          color: #666; } }
+      @media screen and (max-width: 670px) {
+        .Compras .container-details-product .form-group select {
+          width: 150px;
+          border: none;
+          padding: 10px;
+          font-size: 10px;
+          background-color: #f7f7f7;
+          outline: none;
+          color: #666; } }
+      @media screen and (max-width: 500px) {
+        .Compras .container-details-product .form-group select {
+          width: 100px;
+          border: none;
+          padding: 10px;
+          font-size: 6px; } }
+      @media screen and (max-width: 450px) {
+        .Compras .container-details-product .form-group select {
+          width: 60px;
+          border: none;
+          padding: 8px;
+          font-size: 4px; } }
+  .Compras .container-details-product .btn-clean {
+    border: none;
+    background: none;
+    color: #666;
+    margin-left: 120px;
+    cursor: pointer; }
+    @media screen and (max-width: 860px) {
+      .Compras .container-details-product .btn-clean {
+        border: none;
+        background: none;
+        color: #666;
+        margin-left: 100px;
+        cursor: pointer; } }
+    @media screen and (max-width: 670px) {
+      .Compras .container-details-product .btn-clean {
+        border: none;
+        background: none;
+        color: #666;
+        margin-left: 100px;
+        cursor: pointer;
+        font-size: 10px; } }
+    @media screen and (max-width: 500px) {
+      .Compras .container-details-product .btn-clean {
+        font-size: 6px; } }
+    @media screen and (max-width: 450px) {
+      .Compras .container-details-product .btn-clean {
+        font-size: 4px;
+        margin-bottom: 25px; } }
+  .Compras .container-details-product :hover {
+    color: #1bbeb4; }
+
+.Compras .container-add-cart {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4e4e4; }
+  .Compras .container-add-cart .container-quantity {
+    position: relative; }
+    .Compras .container-add-cart .container-quantity input {
+      background-color: #f7f7f7;
+      border: none;
+      padding: 10px;
+      width: 60px;
+      height: 100%;
+      color: #666;
+      font-weight: 500; }
+      @media screen and (max-width: 860px) {
+        .Compras .container-add-cart .container-quantity input {
+          background-color: #f7f7f7;
+          border: none;
+          padding: 7px;
+          width: 55px;
+          height: 100%;
+          color: #666;
+          font-weight: 400; } }
+  @media screen and (max-width: 860px) and (max-width: 670px) {
+    .Compras .container-add-cart .container-quantity input {
+      background-color: #f7f7f7;
+      border: none;
+      padding: 7px;
+      width: 50px;
+      height: 100%;
+      color: #666;
+      font-weight: 400; } }
+  @media screen and (max-width: 860px) and (max-width: 500px) {
+    .Compras .container-add-cart .container-quantity input {
+      font-size: 10px;
+      width: 40px; } }
+  @media screen and (max-width: 860px) and (max-width: 500px) {
+    .Compras .container-add-cart .container-quantity input {
+      font-size: 7px;
+      width: 30px; } }
+      .Compras .container-add-cart .container-quantity input .input-quantity::-webkit-inner-spin-button,
+      .Compras .container-add-cart .container-quantity input .input-quantity::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none; }
+      .Compras .container-add-cart .container-quantity input :focus {
+        outline: none; }
+    .Compras .container-add-cart .container-quantity .btn-increment-decrement {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 7px;
+      right: 7px; }
+      @media screen and (max-width: 860px) {
+        .Compras .container-add-cart .container-quantity .btn-increment-decrement {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 5px;
+          right: 5px; } }
+      @media screen and (max-width: 670px) {
+        .Compras .container-add-cart .container-quantity .btn-increment-decrement {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 5px;
+          right: 5px; } }
+      .Compras .container-add-cart .container-quantity .btn-increment-decrement i {
+        font-size: 11px;
+        color: #666;
+        cursor: pointer; }
+        @media screen and (max-width: 860px) {
+          .Compras .container-add-cart .container-quantity .btn-increment-decrement i {
+            font-size: 12px;
+            color: #666;
+            cursor: pointer; } }
+  @media screen and (max-width: 860px) and (max-width: 670px) {
+    .Compras .container-add-cart .container-quantity .btn-increment-decrement i {
+      font-size: 10px;
+      color: #666;
+      cursor: pointer; } }
+  @media screen and (max-width: 860px) and (max-width: 450px) {
+    .Compras .container-add-cart .container-quantity .btn-increment-decrement i {
+      font-size: 7px;
+      color: #666;
+      cursor: pointer; } }
+      .Compras .container-add-cart .container-quantity .btn-increment-decrement :hover {
+        color: #1bbeb4; }
+  .Compras .container-add-cart .btn-add-to-cart {
+    border: none;
+    background-color: #252525;
+    padding: 10px;
+    color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer; }
+    @media screen and (max-width: 860px) {
+      .Compras .container-add-cart .btn-add-to-cart {
+        border: none;
+        background-color: #252525;
+        padding: 10px;
+        color: #f7f7f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 10px; } }
+    @media screen and (max-width: 670px) {
+      .Compras .container-add-cart .btn-add-to-cart {
+        font-size: 10px; } }
+    @media screen and (max-width: 500px) {
+      .Compras .container-add-cart .btn-add-to-cart {
+        font-size: 6px;
+        padding: 6px; } }
+    @media screen and (max-width: 450px) {
+      .Compras .container-add-cart .btn-add-to-cart {
+        font-size: 4px;
+        padding: 4px; } }
+  .Compras .container-add-cart :hover {
+    color: #1bbeb4; }
+
+.Compras .container-description {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 10px 0; }
+  .Compras .container-description .title-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer; }
+    @media screen and (max-width: 500px) {
+      .Compras .container-description .title-description {
+        font-weight: 200;
+        color: #666;
+        font-size: 7px; } }
+    .Compras .container-description .title-description h4 {
+      font-weight: 300;
+      color: #666;
+      font-size: 25px; }
+      @media screen and (max-width: 670px) {
+        .Compras .container-description .title-description h4 {
+          font-weight: 200;
+          color: #666;
+          font-size: 15px; } }
+      @media screen and (max-width: 500px) {
+        .Compras .container-description .title-description h4 {
+          font-weight: 200;
+          color: #666;
+          font-size: 7px; } }
+    .Compras .container-description .title-description .text-description {
+      font-size: 13px;
+      color: #252525;
+      line-height: 22px;
+      margin-top: 25px; }
+      @media screen and (max-width: 670px) {
+        .Compras .container-description .title-description .text-description p {
+          font-size: 8px;
+          color: #252525;
+          line-height: 22px;
+          margin-top: 25px; } }
+      @media screen and (max-width: 500px) {
+        .Compras .container-description .title-description .text-description p {
+          font-size: 7px;
+          color: #252525;
+          line-height: 22px;
+          margin-top: 25px; } }
+
+.Compras .hidden {
+  display: none; }
+
+.Compras .container-review {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 10px 0; }
+  .Compras .container-review .title-review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer; }
+    @media screen and (max-width: 670px) {
+      .Compras .container-review .title-review {
+        font-size: 7px; } }
+    .Compras .container-review .title-review h4 {
+      font-weight: 300;
+      color: #666;
+      font-size: 25px; }
+      @media screen and (max-width: 670px) {
+        .Compras .container-review .title-review h4 {
+          font-weight: 200;
+          color: #666;
+          font-size: 15px; } }
+      @media screen and (max-width: 500px) {
+        .Compras .container-review .title-review h4 {
+          font-weight: 200;
+          color: #666;
+          font-size: 7px; } }
+    .Compras .container-review .title-review .text-review .hidden {
+      font-size: 13px;
+      color: #252525;
+      line-height: 22px;
+      margin-top: 25px; }
+      @media screen and (max-width: 670px) {
+        .Compras .container-review .title-review .text-review .hidden {
+          font-size: 13px;
+          color: #252525;
+          line-height: 22px;
+          margin-top: 25px; } }
+      @media screen and (max-width: 500px) {
+        .Compras .container-review .title-review .text-review .hidden {
+          font-size: 10px;
+          color: #252525;
+          line-height: 22px;
+          margin-top: 25px; } }
+
+.Compras .container-social {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px o;
+  align-items: center;
+  border-bottom: 1px solid #e4e4e4; }
+  .Compras .container-social span {
+    font-weight: 300;
+    color: #252525; }
+    @media screen and (max-width: 500px) {
+      .Compras .container-social span {
+        font-size: 7px; } }
+  .Compras .container-social .container-button-social {
+    display: flex;
+    gap: 15px;
+    align-items: center; }
+    .Compras .container-social .container-button-social div {
+      color: #000000; }
+      .Compras .container-social .container-button-social div a i {
+        color: #000000; }
+  .Compras .container-social .container-buttons-social a:link, .Compras .container-social .container-buttons-social a:visited {
+    color: #666;
+    font-size: 10px; }
+
+.container-related-products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #50623a; }
+  @media screen and (max-width: 860px) {
+    .container-related-products h2 {
+      font-size: 20px; } }
+  @media screen and (max-width: 670px) {
+    .container-related-products h2 {
+      font-size: 20px; } }
+
+.container-related-products .card-list-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px; }
+  .container-related-products .card-list-products .card {
+    cursor: pointer;
+    margin-bottom: 15px; }
+    .container-related-products .card-list-products .card .card-img {
+      background-color: transparent;
+      margin-bottom: 15px; }
+      .container-related-products .card-list-products .card .card-img img {
+        width: 200px;
+        height: 200px; }
+        @media screen and (max-width: 860px) {
+          .container-related-products .card-list-products .card .card-img img {
+            width: 100px;
+            height: 100px; } }
+        @media screen and (max-width: 670px) {
+          .container-related-products .card-list-products .card .card-img img {
+            width: 70px;
+            height: 70px; } }
+        @media screen and (max-width: 500px) {
+          .container-related-products .card-list-products .card .card-img img {
+            width: 50px;
+            height: 50px;
+            margin-left: 20px; } }
+    .container-related-products .card-list-products .card .info-card {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 5px; }
+      .container-related-products .card-list-products .card .info-card .text-product {
+        color: #252525;
+        font-weight: 300;
+        line-height: 1.4; }
+        .container-related-products .card-list-products .card .info-card .text-product h3 {
+          color: inherit;
+          font-weight: inherit;
+          font-size: 15px; }
+          @media screen and (max-width: 860px) {
+            .container-related-products .card-list-products .card .info-card .text-product h3 {
+              color: inherit;
+              font-weight: inherit;
+              font-size: 12px; } }
+          @media screen and (max-width: 670px) {
+            .container-related-products .card-list-products .card .info-card .text-product h3 {
+              color: inherit;
+              font-weight: inherit;
+              font-size: 8px; } }
+          .container-related-products .card-list-products .card .info-card .text-product h3:hover {
+            color: #1bbeb4; }
+        .container-related-products .card-list-products .card .info-card .text-product p {
+          color: #666;
+          font-size: 13px; }
+          @media screen and (max-width: 860px) {
+            .container-related-products .card-list-products .card .info-card .text-product p {
+              font-size: 11px; } }
+          @media screen and (max-width: 670px) {
+            .container-related-products .card-list-products .card .info-card .text-product p {
+              font-size: 8px; } }
+        .container-related-products .card-list-products .card .info-card .text-product :hover {
+          color: #1bbeb4; }
+    @media screen and (max-width: 670px) {
+      .container-related-products .card-list-products .card .price {
+        font-size: 10px; } }
