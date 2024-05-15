@@ -20,11 +20,6 @@ $color-terciario: #ffc100;
 
 $colores: white, black, gray;
 
-//!OPERADORES
-
-$altura:500px;
-$ancho:500px;
-
 //!MIXING
 @mixin Flex($flex, $justify, $gap, $space-down){
     display: $flex;

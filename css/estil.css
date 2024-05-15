@@ -75,6 +75,11 @@ header nav div ul li a:hover {
   align-items: center;
   margin: 150px;
   gap: 150px; }
+  @media screen and (max-width: 670px) {
+    .Grids {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 20rem; } }
   .Grids div {
     margin: 20px;
     -webkit-box-shadow: 10px 10px 38px 5px rgba(0, 0, 0, 0.75);
